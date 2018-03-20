@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Snake_And_Ladders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game Background" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-8D-Qej">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VU-Pi-AWY">
+                                <rect key="frame" x="422" y="92" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-C3-49M">
+                                <rect key="frame" x="552" y="92" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s00-ts-cl1">
+                                <rect key="frame" x="490" y="224" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dice Roll"/>
+                                <connections>
+                                    <action selector="diceRollBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZ6-cw-Mfl"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Oval2" translatesAutoresizingMaskIntoConstraints="NO" id="QGK-cS-AP3">
+                                <rect key="frame" x="7" y="341" width="27" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Hu-Bma">
+                                <rect key="frame" x="7" y="341" width="27" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Way-A3-Mud">
+                                <rect key="frame" x="403" y="172" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="isPlayerTwoUserTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="1qv-yb-CLD"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is computer the second player?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0t-Fg-EvA">
+                                <rect key="frame" x="472" y="177" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7UI-dK-tUG"/>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Aj-0p-QCr"/>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GzO-to-JfP"/>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JQe-Hm-Y7B"/>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UeI-9P-TLL"/>
+                            <constraint firstItem="WHr-8D-Qej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kOp-2l-Mh5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bluePlayer" destination="QGK-cS-AP3" id="qgY-Sk-p13"/>
+                        <outlet property="bluePlayerLabel" destination="hhc-C3-49M" id="RNY-mx-BsO"/>
+                        <outlet property="isPlayerTwoUser" destination="Way-A3-Mud" id="BOg-al-ZoR"/>
+                        <outlet property="redPlayer" destination="nab-Hu-Bma" id="iJg-O8-TtB"/>
+                        <outlet property="redPlayerLabel" destination="8VU-Pi-AWY" id="nRE-nz-gtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Game Background" width="667" height="375"/>
+        <image name="Oval" width="71" height="71"/>
+        <image name="Oval2" width="71" height="71"/>
+    </resources>
+</document>
